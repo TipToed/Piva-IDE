@@ -14,7 +14,7 @@ FileZ =Tk()
 FileZ.resizable(False,False)
 FileZ.title("Open Or Create A Project")
 FileZ.geometry("600x620")
-FileZ.wm_attributes('-toolwindow', True)
+#FileZ.wm_attributes('-toolwindow', True)
 
 Button(FileZ, text="OPEN A PROJECT", font=('Times', 15, 'normal'), width=52,
 bg='gray', fg='white', command=openProj).grid(row=0, column=0, padx=10, pady=10)
@@ -76,7 +76,7 @@ def saver():
 def new():
     New = Tk()
     New.title("New File")
-    New.wm_attributes('-toolwindow', True)
+    #New.wm_attributes('-toolwindow', True)
     def creator():
         name = NME.get()
         file = open(folder_selected+"/"+name, 'w')
